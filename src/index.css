@@ -1,0 +1,51 @@
+:root {
+  --primary: #C599B6;
+  --secondary: #E6B2BA;
+  --tertiary: #FAD0C4;
+  --background: #FFF7F3;
+  --text-dark: #4a4a4a;
+  --text-light: #6b6b6b;
+  --shadow: rgba(197, 153, 182, 0.2);
+  --hover: rgba(197, 153, 182, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, var(--background) 0%, var(--tertiary) 100%);
+  color: var(--text-dark);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
