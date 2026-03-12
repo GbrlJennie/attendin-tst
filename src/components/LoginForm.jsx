@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../services/AuthContext';
 import { HiOutlineClipboardDocumentCheck } from 'react-icons/hi2'; 
 import './LoginForm.css';
 

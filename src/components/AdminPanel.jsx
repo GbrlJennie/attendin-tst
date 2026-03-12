@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../services/AuthContext';
 import { getAttendanceLogs, getAllUsers } from '../services/api';
 import { HiOutlineClipboardDocumentCheck } from 'react-icons/hi2';
 import './AdminPanel.css';

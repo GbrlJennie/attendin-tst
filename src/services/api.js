@@ -87,8 +87,6 @@ export const submitAttendance = async (userId, eventType, category, notes = '') 
 // Legacy function untuk backward compatibility
 export const submitAbsensi = async (userId, status) => {
   let category = 'WFO';
-  if (status === 'Izin') category = 'IZIN';
-  else if (status === 'Sakit') category = 'SAKIT';
   
   return submitAttendance(userId, 'CHECK_IN', category, `Absensi ${status}`);
 };
